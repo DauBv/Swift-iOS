@@ -2,8 +2,6 @@
 //  SceneDelegate.swift
 //  Demo-Clock
 //
-//  Created by VINICORP JSC on 21/06/2022.
-//
 
 import UIKit
 

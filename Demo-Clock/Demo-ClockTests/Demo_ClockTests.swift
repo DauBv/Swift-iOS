@@ -2,8 +2,6 @@
 //  Demo_ClockTests.swift
 //  Demo-ClockTests
 //
-//  Created by VINICORP JSC on 21/06/2022.
-//
 
 import XCTest
 @testable import Demo_Clock
