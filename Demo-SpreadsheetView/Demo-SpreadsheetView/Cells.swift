@@ -43,8 +43,7 @@ class HeaderCell: Cell {
 }
 
 class TextCell: Cell {
-    let label = UILabel()
-
+    let label = UILabel()    
     override var frame: CGRect {
         didSet {
             label.frame = bounds.insetBy(dx: 4, dy: 2)
@@ -62,8 +61,11 @@ class TextCell: Cell {
         label.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         label.font = UIFont.systemFont(ofSize: 14)
         label.textAlignment = .left
-
         contentView.addSubview(label)
+    }
+    
+    func setTextAlignment(isText: Bool = false) {
+        label.textAlignment = (isText) ? .center : .left
     }
 
     required init?(coder aDecoder: NSCoder) {
